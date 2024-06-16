@@ -24,7 +24,7 @@ struct BaseballGame {
                 let result = confirmNumbers(answer: answer, userInput: userInput)
                 
                 if result.strike == 0 && result.ball == 0 {
-                    print("Nothing")
+                    print("Nothing")    // 아무것도 아닐 때 출력값
                 } else {
                     print("\(result.strike)스트라이크 \(result.ball)볼")
                 }
@@ -50,7 +50,7 @@ struct BaseballGame {
 
 // 유저가 3자리 숫자를 제대로 입력했는지 확인하는 함수 작성, 서로 다른 숫자가 맞는지 숫자가 1-9까지 범위인지
     func checkInput() -> [Int]? {
-        print("3자리 숫자를 입력해주세요: ", terminator: "")
+        print("3자리 숫자를 입력해주세요: ", terminator: "") // terminator에 빈 문자열 전달
         if let input = readLine() {    // readLine 사용 입력을 문자열로 받음
             let numbers = input.compactMap { $0.wholeNumberValue }
             if numbers.count == 3 && Set(numbers).count == 3 && numbers.allSatisfy({ (1...9).contains($0) }) {   // 3자리로 입력되었는지, 서로 다른 숫자인지, 1-9 범위 안에 있는 숫자인지 확인. 전부 true 여야 함
