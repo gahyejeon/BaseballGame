@@ -34,6 +34,7 @@ struct BaseballGame {
         numbers.shuffle()    // 랜덤 숫자 설정
         return Array(numbers.prefix(3))   // 랜덤 숫자 3개 반환
     }
+   
     
 
 // 유저가 3자리 숫자를 제대로 입력했는지 확인하는 함수 작성, 서로 다른 숫자가 맞는지 숫자가 1-9까지 범위인지

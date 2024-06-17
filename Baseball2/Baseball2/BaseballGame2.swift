@@ -37,6 +37,7 @@ struct BaseballGame {
     func makeAnswer() -> [Int] {
         var numbers = Array(1...9)  // 함수 내부를 구현하기
         numbers.shuffle()    // 랜덤 숫자 설정
+        print("정답: \(Array(numbers.prefix(3)))")
         return Array(numbers.prefix(3))   // 랜덤 숫자 3개 반환
     }
     
