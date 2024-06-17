@@ -32,8 +32,6 @@ struct BaseballGame {
                 if result.strike == 3 {
                     isCorrectAnswer = true
                     print("정답입니다!")
-                } else {
-                    print("Nothing")
                 }
             } else {
                 print("올바르지 않은 입력값 입니다.")
